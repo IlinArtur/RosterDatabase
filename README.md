@@ -1,6 +1,6 @@
 #Sql Server Database Tools Example Project
 
-Example Project with Database -Integration- Unit Test
+Example Project with Database ~~Integration~~ Unit Test
 
 #Requirements
 
