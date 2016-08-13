@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "RoasterDatabase", "RoasterDatabase.Test\RoasterDatabase.sqlproj", "{7D348A58-01B3-463E-9003-BC639D2B823A}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "RosterDatabase", "RosterDatabase\RosterDatabase.sqlproj", "{7D348A58-01B3-463E-9003-BC639D2B823A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoasterDatabase.Test.Test", "RoasterDatabase.Test.Test\RoasterDatabase.Test.Test.csproj", "{3A5858DA-257E-41D9-86E3-DEDD348210DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RosterDatabase.Test", "RosterDatabase.Test\RosterDatabase.Test.csproj", "{3A5858DA-257E-41D9-86E3-DEDD348210DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
