@@ -17,7 +17,7 @@ namespace RoasterDatabase.Test.Test
         {
             // Setup the test database based on setting in the
             // configuration file
-            SqlDatabaseTestClass.TestService.DeployDatabaseProject();
+            //SqlDatabaseTestClass.TestService.DeployDatabaseProject();
             SqlDatabaseTestClass.TestService.GenerateData();
         }
 
