@@ -1,6 +1,5 @@
-pipeline
+node
 {
-    agent any
     parameters {
         string(name: 'paramA', defaultValue: 'Hello', description: 'How should I greet the world?')
     }
