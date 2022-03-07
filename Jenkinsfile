@@ -1,12 +1,12 @@
-parameters {
-    string(name: 'paramA', defaultValue: 'Hello', description: 'How should I greet the world?')
-}
+
 
 def nothing = "nothing"
 
 node
 {
-    
+    parameters {
+    string(name: 'paramA', defaultValue: 'Hello', description: 'How should I greet the world?')
+}
     stage('Hello')
     {
         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
