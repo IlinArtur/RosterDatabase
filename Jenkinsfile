@@ -2,6 +2,11 @@
 
 def nothing = "nothing"
 
+input {
+    message "hello",
+    ok "Aga"
+} 
+
 node
 {
     parameters {
@@ -15,4 +20,6 @@ node
     stage('Build'){
         echo "Building ${params.paramA}"
     }
+
+    
 }
