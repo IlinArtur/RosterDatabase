@@ -3,7 +3,7 @@
 def nothing = "nothing"
 
 input {
-    message "hello",
+    message "hello"
     ok "Aga"
 } 
 
