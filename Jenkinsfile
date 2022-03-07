@@ -7,14 +7,10 @@ node
     
     stage('Hello')
     {
-        step{
-            echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-        }
+        echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
     }
 
     stage('Build'){
-        step{
-            echo "Building ${params.paramA}"
-        }
+        echo "Building ${params.paramA}"
     }
 }
