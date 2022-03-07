@@ -3,8 +3,8 @@
 def nothing = "nothing"
 
 input {
-    message "hello"
-    ok "Aga"
+    message 'hello'
+    ok 'Aga'
 } 
 
 node
