@@ -2,6 +2,8 @@ parameters {
     string(name: 'paramA', defaultValue: 'Hello', description: 'How should I greet the world?')
 }
 
+def nothing = "nothing"
+
 node
 {
     
