@@ -11,7 +11,8 @@ node
 }
 
     stage ('Cyka'){
-        input message: 'hello', ok: 'Aga'
+        input message: 'Production or Sandbox', parameters: [choice(choices: ['Production', 'Sandbox'], description: '', name: 'DeployTo')]
+        echo "Deploying to ${params.DeployTo}"
     }
 
     stage('Hello')
