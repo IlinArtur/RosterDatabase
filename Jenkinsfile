@@ -4,6 +4,8 @@ def nothing = "nothing"
 
 
 
+node
+{
 
     stage ('Prepare'){
         def prod_or_sandbox = input message: 'Production or Sandbox', parameters: [choice(choices: ['Production', 'Sandbox'], description: '', name: 'DeployTo')]
