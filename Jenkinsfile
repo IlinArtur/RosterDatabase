@@ -11,8 +11,8 @@ node
 }
 
     stage ('Cyka'){
-        input message: 'Production or Sandbox', parameters: [choice(choices: ['Production', 'Sandbox'], description: '', name: 'DeployTo')]
-        echo "Deploying to ${params.DeployTo}"
+        def prod_or_sandbox = input message: 'Production or Sandbox', parameters: [choice(choices: ['Production', 'Sandbox'], description: '', name: 'DeployTo')]
+        echo "Deploying to ${params.prod_or_sandbox}"
     }
 
     stage('Hello')
