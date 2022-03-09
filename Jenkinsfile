@@ -13,7 +13,7 @@ node
     stage ('Cyka'){
         def prod_or_sandbox = input message: 'Production or Sandbox', parameters: [choice(choices: ['Production', 'Sandbox'], description: '', name: 'DeployTo')]
         echo "Deploying to ${prod_or_sandbox}"
-        env.BUILD_DISPLAY_NAME = "${env.BUILD_DISPLAY_NAME}(${prod_or_sandbox})"
+        currentBuild.description = "${env.BUILD_DISPLAY_NAME}(${prod_or_sandbox})"
     }
 
     stage('Hello')
