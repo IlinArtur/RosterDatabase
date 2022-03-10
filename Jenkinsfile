@@ -11,6 +11,7 @@ node
         def prod_or_sandbox = input message: 'Production or Sandbox', parameters: [choice(choices: ['Production', 'Sandbox'], description: '', name: 'DeployTo')]
         echo "Deploying to ${prod_or_sandbox}"
         currentBuild.description = "${prod_or_sandbox}"
+        return
     }
 
     stage('Hello')
