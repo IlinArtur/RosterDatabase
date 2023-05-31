@@ -6,10 +6,9 @@ def nothing = "nothing"
 
 node
 {
+    
     timestamps {
     // some block
-    }
-    
     stage ('Prepare'){
         def prod_or_sandbox = input message: 'Production or Sandbox', parameters: [choice(choices: ['Production', 'Sandbox'], description: '', name: 'DeployTo')]
         echo "Deploying to ${prod_or_sandbox}"
@@ -27,5 +26,6 @@ node
         echo "Building ${params.paramA}"
     }
 
+    }
     
 }
